@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- 路由出口 -->
+    <!-- 路由配置到的组件将渲染到这里 -->
+    <router-view></router-view>
   </div>
 </template>
 
@@ -16,13 +17,13 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="less">
+// 清除默认样式
+html,
+body,
+h3,
+p {
+  margin: 0;
+  padding: 0
 }
 </style>
